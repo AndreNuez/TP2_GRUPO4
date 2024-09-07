@@ -36,40 +36,31 @@ public class ListContactActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar3);
         setSupportActionBar(toolbar);
 
-        //tvFullContact = findViewById(R.id.tvFullContact);
         lvItems = findViewById(R.id.listViewDatos);
 
-        // Leer los datos del archivo
         List<String> listaDatos = leerDatos();
 
         List<String> lsDatosFiltro = filtrarNombresMail(listaDatos);
-        // Crear un ArrayAdapter para mostrar los datos en el ListView
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, lsDatosFiltro);
         lvItems.setAdapter(adapter);
 
-        // Configurar el listener para los ítems del ListView
         lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // Obtener el dato original correspondiente al ítem clickeado
                 String datosItem = listaDatos.get(position);
 
-                // Mostrar los detalles en el TextView
-                mostrarDetallesDialog(datosItem); // Asegúrate de que el TextView sea visible
+                mostrarDetallesDialog(datosItem); 
 
             }
         });
     }
 
     private void mostrarDetallesDialog(String datosItem) {
-        // Crear un AlertDialog para mostrar los detalles
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Detalles del Contacto");
 
-        // Mostrar el dato completo en el cuerpo del diálogo
         builder.setMessage(datosItem);
 
-        // Agregar un botón para cerrar el diálogo
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -77,7 +68,6 @@ public class ListContactActivity extends AppCompatActivity {
             }
         });
 
-        // Mostrar el diálogo
         AlertDialog dialog = builder.create();
         dialog.show();
     }
