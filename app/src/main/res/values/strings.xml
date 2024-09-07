@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Ejercicio Controles - Grupo 4</string>
+    <string name="item1">Agregar Contactos</string>
+    <string name="item2">Listado de Contactos</string>
+
+    <string name="text_dataContact">
+        "FORMULARIO DE CONTACTO\n\n"
+        "Este es un formulario destinado al registro de personas, sus datos personales e intereses"
+    </string>
+    <string name="contact_name">Nombre:</string>
+    <string name="hint_name">Nombre:</string>
+    <string name="contact_surname">Apellido:</string>
+    <string name="hint_surname">Apellido:</string>
+    <string-array name="spinner_items_contact">
+        <item>Casa</item>
+        <item>Trabajo</item>
+        <item>Móvil</item>
+    </string-array>
+    <string name="contact_phone">Telefono:</string>
+    <string name="hint_phone">Telefono:</string>
+    <string name="contact_email">Mail:</string>
+    <string name="hint_email">Mail:</string>
+    <string name="contact_address">Direccion:</string>
+    <string name="hint_address">Direccion:</string>
+    <string name="contact_fec_nac">Fecha de Nacimiento:</string>
+    <string name="hint_fec_nac">Fecha de Nacimiento:</string>
+    <string name="btn_continue">Continuar</string>
+
+    <string name="tvTitulo">FORMULARIO DE CONTACTO</string>
+    <string name="tvdescripcion">A continuación, por favor se pide completar más datos personales.</string>
+    <string name="rb1">Primario incompleto</string>
+    <string name="rb2">Primario completo</string>
+    <string name="rb3">Secundrio incompleto</string>
+    <string name="rb4">Secundario completo</string>
+    <string name="rb5">Otros</string>
+    <string name="tvIntereses">INTERESES</string>
+    <string name="cb1">Deporte</string>
+    <string name="cb2">Musica</string>
+    <string name="cb3">Arte</string>
+    <string name="cb4">Tecnologia</string>
+    <string name="tvInfo">¿Desea recibir informacion?</string>
+    <string name="swSi">Si</string>
+    <string name="btnGuardar">Guardar</string>
+</resources>
